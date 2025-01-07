@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 150px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .gallery-item {
+            text-align: center;
+            width: 250px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JobsRUs Gallery</h1>
+</header>
+
+<a href="index.html" class="back-button">Back to Home</a>
+
+<h2>Objective</h2>
+<p>To develop the functionality of the Jobs-R-Us Mobile App, you will utilize Android Studio, leveraging Kotlin, XML, and Firebase technologies. You are expected to adhere to the guidelines outlined in tasks 1 and 2 to effectively implement the app's strategic objectives throughout the development phases.</p>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="pic1.PNG" alt="Project 1">
+        <div class="description">This is the welcome page. Simple design with login and signup options.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic2.PNG" alt="Project 2">
+        <div class="description">Login Page where user enter their details and the system run it to see if the user can enter.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic3.PNG" alt="Project 3">
+        <div class="description">Sign Up page where the user register and the information will be stored in a Firebase database.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic4.PNG" alt="Project 4">
+        <div class="description">This is the homepage where all the jobs will display for the user.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic5.PNG" alt="Project 5">
+        <div class="description">Each Job is clickable to show more information about each job description.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic6.PNG" alt="Project 6">
+        <div class="description">Page to edit profile details.</div>
+    </div>
+    <div class="gallery-item">
+        <img src="pic7.PNG" alt="Project 7">
+        <div class="description">Page to add a job to display it on the homepage.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Louis Viljoen. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

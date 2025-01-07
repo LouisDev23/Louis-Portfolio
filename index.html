@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Louis | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Louis Viljoen</h1>
+            <p class="title">Web & Mobile Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="viewCVBtn">View CV</a></li> <!-- View CV button -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Building Modern Web Solutions</h2>
+            <p>Passionate about creating innovative, responsive websites that stand out.</p>
+            <a href="#projects" class="cta-btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="20241007_125859.jpg" alt="Louis-profile" class="profile-image">
+            <p>I am a dedicated web developer with a strong passion for creating visually appealing, user-centric websites. With a solid foundation in front-end technologies (HTML, CSS, JavaScript) and experience in back-end frameworks like Node.js, I am constantly expanding my skills to deliver optimal digital experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="DDT picture.PNG" alt="Dominus dune Tours Project">
+                <div class="project-info">
+                    <h3>Dominus Dune Tours</h3>
+                    <p>A simple HTML CSS & JS Dune tour website with a MYSQL database</p>
+                    <a href="https://dominusdunedriving.com/" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="PPM Picture.PNG" alt="PPM Utilities">
+                <div class="project-info">
+                    <h3>PPM Utilities project</h3>
+                    <p>A utilities company website with simple HTML CSS and JS.</p>
+                    <a href="https://louisdev23.github.io/PPM-Utilities-Project/" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pic1.PNG" alt="Project 3">
+                <div class="project -info">
+                    <h3>JobsRUs Mobile app project</h3>
+                    <p>A Kotlin mobile app designed to search for jobs and add them. Made in Android Studio using Kotlin and Firebase.</p>
+                    <a href="mobile_gallery.html" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form action="mailto:louisviljoen007@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Louis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for CV -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Louis Viljoen's CV</h2>
+            <iframe src="Louis CV finaal.pdf" width="100%" height="500px"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("cvModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("viewCVBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
