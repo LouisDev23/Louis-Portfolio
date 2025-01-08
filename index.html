@@ -40,6 +40,38 @@
             text-decoration: none;
             cursor: pointer;
         }
+        #contact-details {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    max-width: 400px; /* Max width for the section */
+    margin: 20px auto; /* Center the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+#contact-details h2 {
+    color: #333; /* Darker color for the heading */
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#contact-details p {
+    color: #555; /* Medium gray for text */
+    font-size: 16px; /* Font size for paragraphs */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+#contact-details a {
+    color: #007BFF; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact-details a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
     </style>
 </head>
 <body>
@@ -107,16 +139,16 @@
 
     <section id="contact" class="container">
         <h2>Contact Me</h2>
-        <form action="mailto:louisviljoen007@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+        <p>
+            <strong>Whatsapp:</strong> 
+            <a>+27 725578265</a>
+        </p>
+        <p>
+            <strong>Email:</strong> 
+            <a">Louisviljoen007@gmail.com</a>
+        </p>
     </section>
+    
 
     <footer>
         <div class="container">
